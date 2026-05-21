@@ -32,3 +32,10 @@ jobs:
           publish_branch: gh-pages
           force_orphan: true
           full_commit_message: ${{ github.event.head_commit.message }}
+
+      - name: Notify main site
+        run: |
+          curl -X POST https://api.github.com/repos/SixingWang2025/SixingWang2025.github.io/dispatches \
+            -H "Authorization: token ${{ secrets.PERSONAL_ACCESS_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            -d '{"event_type": "submodule-update"}'
