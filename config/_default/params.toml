@@ -1,0 +1,55 @@
+mainSections        = ["post"]
+featuredImageField  = "image"
+rssFullContent      = true
+favicon             = ""
+
+[footer]
+    since     = 2026
+    customText = ""
+
+[dateFormat]
+    published   = "2006-01-02"
+    lastUpdated = "2006-01-02 15:04 MST"
+
+[sidebar]
+    emoji    = "📝"
+    subtitle = "记录技术与生活"
+
+    [sidebar.avatar]
+        enabled = true
+        local   = false
+        src     = "/img/avatar.svg"
+
+[article]
+    math        = false
+    toc         = true
+    readingTime = true
+
+    [article.license]
+        enabled = true
+        default = "Licensed under CC BY-NC-SA 4.0"
+
+[widgets]
+    homepage = [
+        { type = "search" },
+        { type = "archives", params = { limit = 5 } },
+        { type = "categories", params = { limit = 10 } },
+        { type = "tag-cloud", params = { limit = 10 } },
+    ]
+    page     = [{ type = "toc" }]
+
+[colorScheme]
+    toggle  = true
+    default = "auto"
+
+[imageProcessing]
+    [imageProcessing.cover]
+        enabled = true
+    [imageProcessing.content]
+        enabled = true
+
+[comments]
+    enabled = false
+
+[opengraph.twitter]
+    card = "summary_large_image"

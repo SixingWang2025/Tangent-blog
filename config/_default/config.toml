@@ -1,0 +1,19 @@
+baseURL                = "https://sixingwang2025.github.io/blog/"
+languageCode           = "zh-cn"
+defaultContentLanguage = "zh-cn"
+title                  = "Tangent's Blog"
+theme                  = "stack"
+hasCJKLanguage         = true
+enableEmoji            = true
+
+[pagination]
+    pagerSize = 5
+
+[permalinks]
+    post = "/p/:slug/"
+    page = "/:slug/"
+
+[sitemap]
+    changefreq = "weekly"
+    priority   = 0.5
+    filename   = "sitemap.xml"
