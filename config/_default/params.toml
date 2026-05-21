@@ -17,7 +17,7 @@ favicon             = ""
 
     [sidebar.avatar]
         enabled = true
-        local   = false
+        local   = true
         src     = "/img/avatar.svg"
 
 [article]
