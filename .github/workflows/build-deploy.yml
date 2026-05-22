@@ -17,15 +17,6 @@ jobs:
         with:
           submodules: true
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: "latest"
-          extended: true
-
-      - name: Build
-        run: hugo --minify --baseURL "https://sixingwang2025.github.io/blog/"
-
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
