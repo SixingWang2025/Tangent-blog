@@ -1,7 +1,7 @@
 mainSections        = ["post"]
 featuredImageField  = "image"
 rssFullContent      = true
-favicon             = ""
+favicon             = "/img/avatar.jpg"
 
 [footer]
     since     = 2026
@@ -18,7 +18,7 @@ favicon             = ""
     [sidebar.avatar]
         enabled = true
         local   = true
-        src     = "/img/avatar.svg"
+        src     = "/img/avatar.jpg"
 
 [article]
     math        = false
