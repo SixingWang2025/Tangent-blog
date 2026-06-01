@@ -1,3 +1,15 @@
+[[main]]
+    identifier = "nav"
+    name       = "导航"
+    url        = "https://sixingwang2025.github.io/nav/"
+    weight     = 1
+
+[[main]]
+    identifier = "page"
+    name       = "个人主页"
+    url        = "https://sixingwang2025.github.io/page/"
+    weight     = 2
+
 [[social]]
     identifier = "github"
     name       = "GitHub"

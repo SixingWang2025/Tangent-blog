@@ -1,7 +1,7 @@
 baseURL                = "https://sixingwang2025.github.io/blog/"
 locale                  = "zh-cn"
 defaultContentLanguage = "zh-cn"
-title                  = "Tangent's Blog"
+title                  = "Tangent|博客"
 theme                  = "stack"
 hasCJKLanguage         = true
 enableEmoji            = true
