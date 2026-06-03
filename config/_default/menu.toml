@@ -3,33 +3,25 @@
     name       = "个人主页"
     url        = "https://sixingwang2025.github.io/page/"
     weight     = 1
-
-    [social.params]
-        icon = "home"
+    params     = { icon = "home" }
 
 [[social]]
     identifier = "nav"
     name       = "导航"
     url        = "https://sixingwang2025.github.io/nav/"
     weight     = 2
-
-    [social.params]
-        icon = "chevron-right"
+    params     = { icon = "chevron-right" }
 
 [[social]]
     identifier = "github"
     name       = "GitHub"
     url        = "https://github.com/SixingWang2025"
     weight     = 3
-
-    [social.params]
-        icon = "brand-github"
+    params     = { icon = "brand-github" }
 
 [[social]]
     identifier = "rss"
     name       = "RSS"
     url        = "/index.xml"
     weight     = 4
-
-    [social.params]
-        icon = "rss"
+    params     = { icon = "rss" }
