@@ -1,0 +1,29 @@
+{{- $ThemeVersion := "4.0.2" -}}
+<footer class="site-footer">
+    <section class="copyright">
+        &copy;
+        {{- if and (.Site.Params.footer.since) (ne .Site.Params.footer.since (int (now.Format "2006"))) }}
+            {{ .Site.Params.footer.since }} - {{ end -}}
+        {{ now.Format "2006" }}
+        <a href="https://sixingwang2025.github.io">Tangent</a>
+        &nbsp;|&nbsp; 保留部分权利 &nbsp;|&nbsp; 本博客采用
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 许可协议</a>
+        {{- $ccPath := "img/cc/cc.svg" | relURL -}}
+        {{- $byPath := "img/cc/by.svg" | relURL -}}
+        {{- $ncPath := "img/cc/nc.svg" | relURL -}}
+        {{- $saPath := "img/cc/sa.svg" | relURL -}}
+        <img src="{{ $ccPath }}" alt="CC" style="max-width:1em;max-height:1em;margin-left:.2em;vertical-align:text-bottom;">
+        <img src="{{ $byPath }}" alt="BY" style="max-width:1em;max-height:1em;margin-left:.2em;vertical-align:text-bottom;">
+        <img src="{{ $ncPath }}" alt="NC" style="max-width:1em;max-height:1em;margin-left:.2em;vertical-align:text-bottom;">
+        <img src="{{ $saPath }}" alt="SA" style="max-width:1em;max-height:1em;margin-left:.2em;vertical-align:text-bottom;">
+    </section>
+
+    <section class="powerby">
+        {{- $Generator := `<a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>` -}}
+        {{- $Theme := printf `<b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="%s">Stack</a></b>` $ThemeVersion -}}
+        {{- $DesignedBy := `<a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>` -}}
+
+        {{ T "footer.builtWith" (dict "Generator" $Generator) | safeHTML }} <br />
+        {{ T "footer.designedBy" (dict "Theme" $Theme "DesignedBy" $DesignedBy) | safeHTML }}
+    </section>
+</footer>
